@@ -7,16 +7,16 @@ function Home() {
 
   async function getProducts() {
     try {
-      const res = await fetch("https://fakestoreapi.com/products/");
+      const res = await fetch("https://fakestoreapi.in/api/products");
       const data = await res.json();
-      setProducts(data);
+      setProducts(data.products);
       setLoading(false);
     } catch (err) {
       console.error("Error : ", err.message);
       setLoading(false);
     }
   }
-  // console.log(products);
+  console.log(products);
   // console.log(loading);
 
   useEffect(() => {

@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import { FaCartShopping } from "react-icons/fa6";
+import { IoHome } from "react-icons/io5";
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,12 +19,14 @@ function Header() {
         {/* Desktop Navigation */}
         <nav className="hidden md:flex space-x-8">
           <Link to="/" className="hover:text-gray-300 transition duration-300">
+            <IoHome size={30} color="white" />
             Home
           </Link>
           <Link
             to="/cart"
             className="hover:text-gray-300 transition duration-300"
           >
+            <FaCartShopping size={30} color="white" />
             Cart
           </Link>
         </nav>

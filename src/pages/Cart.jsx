@@ -27,7 +27,7 @@ function Cart() {
         {cart && cart.length ? (
           <div className="bg-[#8ff38f6e] shadow-lg rounded-lg p-6">
             <h1 className="text-2xl font-bold text-gray-800 mb-4 text-center">
-              Your Cart
+              Your Cart Items
             </h1>
             <div className="space-y-4">
               {cart.map((item) => (
